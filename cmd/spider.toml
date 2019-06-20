@@ -1,0 +1,5 @@
+
+[bm]
+    addr = "0.0.0.0:8080"
+    maxListen = 10000
+    timeout = "1000s"
