@@ -25,7 +25,7 @@ type Config struct {
 	BM         *blademaster.ServerConfig
 }
 func init() {
-	flag.StringVar(&confPath, "conf", "./cmd/spider.toml", "config path")
+	flag.StringVar(&confPath, "conf", "spider.toml", "config path")
 }
 
 func local() (err error) {
