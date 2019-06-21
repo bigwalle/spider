@@ -13,8 +13,8 @@ WORKDIR cmd
 
 RUN go build -o spider .
 
-#EXPOSE 8081
-#
-#ENTRYPOINT ["./spider"]
+EXPOSE 8081
 
-CMD ["/bin/bash", "build.sh"]
+ENTRYPOINT ["./spider"]
+
+#CMD ["/bin/bash", "./build.sh"]

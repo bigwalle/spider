@@ -22,7 +22,7 @@ type Config struct {
 	// tracer
 	Tracer *trace.Config
 
-	BM         *blademaster.ServerConfig
+	BM  *blademaster.ServerConfig
 }
 func init() {
 	flag.StringVar(&confPath, "conf", "spider.toml", "config path")
