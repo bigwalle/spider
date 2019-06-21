@@ -2,7 +2,7 @@
 FROM golang
 
 #作者
-MAINTAINER Razil "292545811@qq.com"
+MAINTAINER JackYang "292545811@qq.com"
 
 #设置工作目录
 WORKDIR $GOPATH/src/spider
@@ -13,8 +13,8 @@ WORKDIR cmd
 
 RUN go build -o spider .
 
-EXPOSE 8081
+#EXPOSE 8081
+#
+#ENTRYPOINT ["./spider"]
 
-ENTRYPOINT ["./spider"]
-
-#CMD ["/bin/bash", "build.sh"]
+CMD ["/bin/bash", "build.sh"]
